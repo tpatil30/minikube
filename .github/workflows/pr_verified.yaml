@@ -83,7 +83,7 @@ jobs:
           sudo apt install -y jq
 
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
 
@@ -171,7 +171,7 @@ jobs:
           sudo apt install -y jq
 
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
 
@@ -271,7 +271,7 @@ jobs:
           curl -LO https://github.com/medyagh/gopogh/releases/download/v0.9.0/gopogh-linux-amd64
           sudo install gopogh-linux-amd64 /usr/local/bin/gopogh
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Run Integration Test
@@ -368,7 +368,7 @@ jobs:
           sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate off
           sudo /usr/libexec/ApplicationFirewall/socketfilterfw -k
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Run Integration Test
@@ -465,7 +465,7 @@ jobs:
           curl -LO https://github.com/medyagh/gopogh/releases/download/v0.9.0/gopogh-linux-amd64
           sudo install gopogh-linux-amd64 /usr/local/bin/gopogh
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Run Integration Test
@@ -549,7 +549,7 @@ jobs:
           curl -LO https://github.com/medyagh/gopogh/releases/download/v0.9.0/gopogh-darwin-amd64
           sudo install gopogh-darwin-amd64 /usr/local/bin/gopogh
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Info
@@ -656,7 +656,7 @@ jobs:
           curl -LO https://github.com/medyagh/gopogh/releases/download/v0.9.0/gopogh-linux-amd64
           sudo install gopogh-linux-amd64 /usr/local/bin/gopogh
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Run Integration Test
@@ -738,7 +738,7 @@ jobs:
           curl -LO https://github.com/medyagh/gopogh/releases/download/v0.9.0/gopogh-darwin-amd64
           sudo install gopogh-darwin-amd64 /usr/local/bin/gopogh
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Info
@@ -834,7 +834,7 @@ jobs:
           Remove-Item minikube_binaries -Force -Recurse
           ls
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Start Docker Desktop
@@ -929,7 +929,7 @@ jobs:
           Remove-Item minikube_binaries -Force -Recurse
           ls
       - name: Download Binaries
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: minikube_binaries
       - name: Start Docker Desktop
@@ -1011,7 +1011,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: download all extra reports
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v4.1.7
       - name: upload all extra reports
         shell: bash {0}
         continue-on-error: true
